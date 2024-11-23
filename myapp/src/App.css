@@ -1,0 +1,168 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #243b55, #141e30); /* Deep blue gradient */
+  color: #f5f5f5; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+p {
+  color: #e4e4e4; /* Subtle gray for messages */
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #3e5151, #decba4); /* Teal to soft gold gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Header styling */
+.Todo-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffd700; /* Gold for elegance */
+}
+
+/* Input fields styling */
+.Todo-box input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #b0b0b0; /* Subtle gray border */
+  border-radius: 5px;
+  background-color: #ffffff; /* Clean white background */
+  color: #333; /* Dark text for readability */
+}
+
+.Todo-box input::placeholder {
+  color: #888888; /* Soft gray for placeholders */
+}
+
+/* Add button styling */
+.Todo-box button {
+  width: 30%; 
+  padding: 10px;
+  background-color: #4CAF50; /* Vibrant green */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Todo-box button:hover {
+  background-color: #388E3C; /* Darker green */
+  transform: scale(1.05);
+}
+
+/* Todos list styling */
+.todos {
+  margin-top: 20px;
+}
+
+.todo-card {
+  background: linear-gradient(to right, #ff5f6d, #ffc371); /* Sunset-inspired gradient */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #ffae42; /* Bright orange accent */
+}
+
+.todo-card div {
+  margin-bottom: 10px;
+}
+
+/* Checkbox and delete button styling */
+.todo-card input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.todo-card label {
+  margin-right: 20px;
+  color: #ffffff; /* White labels */
+}
+
+.todo-card button {
+  padding: 5px 10px;
+  background-color: #E63946; /* Bold crimson for delete button */
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.todo-card button:hover {
+  background-color: #B22234; /* Darker crimson */
+  transform: scale(1.05);
+}
+
+.notification {
+  color: #f6fcfc; /* Green for success */
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Responsive design */
+
+/* For medium to large devices (tablets and laptops) */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .Todo-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .Todo-box button {
+    font-size: 1rem;
+  }
+
+  .todo-card {
+    padding: 12px;
+  }
+}
+
+/* For small screens (phones) */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .Todo-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .Todo-box button {
+    font-size: 0.9rem;
+    width: 40%;
+  }
+
+  .todo-card {
+    padding: 10px;
+  }
+
+  .todo-card button {
+    width: 100%;
+    padding: 8px;
+  }
+}
